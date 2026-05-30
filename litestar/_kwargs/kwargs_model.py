@@ -275,7 +275,7 @@ class KwargsModel:
         return param_definitions, expected_dependencies
 
     @classmethod
-    def create_for_signature_model(
+    def create_for_signature_model(  # noqa: C901
         cls,
         signature_model: type[SignatureModel],
         parsed_signature: ParsedSignature,
